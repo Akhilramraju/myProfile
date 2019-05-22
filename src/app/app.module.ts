@@ -2,10 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { ProfileAppComponent } from './profile-app.component';
+import { NavBarComponent } from './nav/nav-bar.component';
+import { HeaderBarComponent } from './header/header-bar.component';
+
 
 @NgModule({
   declarations: [
-    ProfileAppComponent
+    ProfileAppComponent,
+    NavBarComponent,
+    HeaderBarComponent
   ],
   imports: [
     BrowserModule
@@ -14,3 +19,4 @@ import { ProfileAppComponent } from './profile-app.component';
   bootstrap: [ProfileAppComponent]
 })
 export class AppModule { }
+
