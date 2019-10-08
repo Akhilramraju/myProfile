@@ -2,3 +2,7 @@
 background-repeat: no-repeat; background-size: cover; background-color: transparent; background-position: 50% 50%;  min-height: 0px; padding-top: 100px; padding-bottom: 100px;
 background-size: 1000px;
 }
+.disable_ripple:hover{
+    background: transparent !important;
+    
+    }

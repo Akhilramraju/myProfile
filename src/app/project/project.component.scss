@@ -8,6 +8,9 @@
    .cloumn-2 {   float: left;     } 
    .row:after {    content: "";     display: flex;     clear: both;  }
  
+   .mainImage{
+    padding-top: 500px;
+   }
     .page-content {
       display: inline-block;
       width: 100%;

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SidebarService } from './nav/nav-bar.service';
+// import { MatExpansionModule } from '@angular/material/expansion';
 
 @Component({
   selector: 'profile-app',
@@ -31,4 +32,8 @@ export class ProfileAppComponent {
   hideSidebar() {
     this.sidebarService.setSidebarState(true);
   }
+  // ngAfterContentInit() {
+  //   const Elm = require('../elm/main');
+  //   Elm.Main.embed(document.getElementById('elm'));
+  // }
 }

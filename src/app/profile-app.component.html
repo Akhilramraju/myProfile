@@ -4,7 +4,13 @@
 
       <!-- <nav-bar *ngIf="showNavigationNavigation"></nav-bar> -->
     </div>
-
+    <!-- <div appParallax [ratio]="-0.2" class="column-1" style="background-color: yellow">
+      <h1>!</h1>
+    </div>
+    <div >
+      <br>
+      <h1 style="padding-left: 10px"> Header</h1>
+    </div> -->
     <div class="mainImage"
       style="background-size: auto; background-image: url(assets/img/bike_background_edited.jpg); ">
 
@@ -19,6 +25,7 @@
                 <a href="#" class="btn btn-outline-secondary mr-1 mb-1" (click)="toggleSidebar()">Nav</a>
 
                 <introduction-page></introduction-page>
+
               </div>
             </div>
 
@@ -33,8 +40,13 @@
       </div>
 
     </div>
+    <contact-me></contact-me>
   </div>
 
+  <!-- <div>
+    <div id="elm">
+    </div>
+  </div> -->
   <!-- <div class="page-wrapper" [ngClass]="{'toggled':  getSideBarState()}">
     <nav-bar></nav-bar>
     <main class="page-content"> 

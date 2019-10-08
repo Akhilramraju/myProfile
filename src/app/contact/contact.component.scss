@@ -1,0 +1,22 @@
+.column
+{   
+    padding-left: 30%;
+    float: left;
+    
+    
+}
+
+.row:after
+{
+    content: "";
+    display: table;
+    clear:both;
+    align-content: center;
+}
+
+.contactBox{
+    padding-top: 2%;
+    height: 200px;
+    width: 100%;
+    background-color: burlywood;
+}
