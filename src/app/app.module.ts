@@ -10,7 +10,17 @@ import { ParallaxDirective } from './common/parallax.directive'
 import { getMatFormFieldPlaceholderConflictError } from '@angular/material';
 import { introductionPage } from './introduction/introduction.component';
 import { fromEventPattern } from 'rxjs';
+import {
 
+  FacebookLoginProvider,
+  SocialServiceConfig,
+  NgxSocialButtonModule
+} from "ngx-social-button";
+
+export function getAuthServiceConfigs() {
+  let config = new SocialServiceConfig().addFacebook("2532181467009761");
+  return config;
+}
 
 @NgModule({
   declarations: [
@@ -27,7 +37,8 @@ import { fromEventPattern } from 'rxjs';
 
     BrowserModule,
     MatExpansionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxSocialButtonModule
 
 
   ],
@@ -39,7 +50,12 @@ import { fromEventPattern } from 'rxjs';
 
   ]
   ,
-  providers: [],
+  providers: [
+    {
+      provide: SocialServiceConfig,
+      useFactory: getAuthServiceConfigs
+    }
+  ],
   bootstrap: [ProfileAppComponent]
 })
 export class AppModule { }

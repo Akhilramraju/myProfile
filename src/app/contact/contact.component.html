@@ -3,14 +3,19 @@
     <div class="contactBox">
 
         <div class="row">
-            <div class="column">
-                <div class="row"> Email </div>
-                <div class="row"> Mobile</div>
-            </div>
+
 
             <div class="column">
                 <div class="row"> Email </div>
                 <div class="row"> Mobile</div>
+            </div>
+            <div class="column">
+                <div class="row">
+                    <facebook-login-button [style]="'round'" (socialUser)="getSocialUser(event)">
+
+                    </facebook-login-button>
+                </div>
+
             </div>
         </div>
     </div>
